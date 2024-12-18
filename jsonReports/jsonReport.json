@@ -1,0 +1,246 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\anura\\Desktop\\learn-playwright\\playwright.config.ts",
+    "rootDir": "C:/Users/anura/Desktop/learn-playwright",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/anura/Desktop/learn-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/anura/Desktop/learn-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/*",
+          "pomtest/*"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.49.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "pomtest\\addToCart.test.ts",
+      "file": "pomtest/addToCart.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Page object test demo",
+          "file": "pomtest/addToCart.test.ts",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Register test_01",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "status": "passed",
+                      "duration": 11999,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-12-17T22:19:49.035Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c188a18f2ecab048a02-879da2f6f9dbc1bc5df0",
+              "file": "pomtest/addToCart.test.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "Login test_02",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "status": "failed",
+                      "duration": 6820,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mMy \u001b[27mAccount\"\u001b[39m\nReceived: \u001b[31m\"Account\u001b[7m Login\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mMy \u001b[27mAccount\"\u001b[39m\nReceived: \u001b[31m\"Account\u001b[7m Login\u001b[27m\"\u001b[39m\n    at C:\\Users\\anura\\Desktop\\learn-playwright\\pomtest\\addToCart.test.ts:41:36",
+                        "matcherResult": {
+                          "actual": "Account Login",
+                          "expected": "My Account",
+                          "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mMy \u001b[27mAccount\"\u001b[39m\nReceived: \u001b[31m\"Account\u001b[7m Login\u001b[27m\"\u001b[39m",
+                          "name": "toBe",
+                          "pass": false
+                        },
+                        "location": {
+                          "file": "C:\\Users\\anura\\Desktop\\learn-playwright\\pomtest\\addToCart.test.ts",
+                          "column": 36,
+                          "line": 41
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 39 |\u001b[39m         \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mclickLoginBtn()\u001b[33m;\u001b[39m\n \u001b[90m 40 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m         expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"My Account\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     \n \u001b[90m 43 |\u001b[39m     })\n \u001b[90m 44 |\u001b[39m     \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\anura\\Desktop\\learn-playwright\\pomtest\\addToCart.test.ts",
+                            "column": 36,
+                            "line": 41
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mMy \u001b[27mAccount\"\u001b[39m\nReceived: \u001b[31m\"Account\u001b[7m Login\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m 39 |\u001b[39m         \u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mclickLoginBtn()\u001b[33m;\u001b[39m\n \u001b[90m 40 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m         expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mtitle())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"My Account\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     \n \u001b[90m 43 |\u001b[39m     })\n \u001b[90m 44 |\u001b[39m     \u001b[0m\n\u001b[2m    at C:\\Users\\anura\\Desktop\\learn-playwright\\pomtest\\addToCart.test.ts:41:36\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-12-17T22:20:02.523Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\anura\\Desktop\\learn-playwright\\test-results\\pomtest-addToCart-Page-object-test-demo-Login-test-02\\test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\anura\\Desktop\\learn-playwright\\pomtest\\addToCart.test.ts",
+                        "column": 36,
+                        "line": 41
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c188a18f2ecab048a02-c45d622780260a36fa78",
+              "file": "pomtest/addToCart.test.ts",
+              "line": 33,
+              "column": 9
+            },
+            {
+              "title": "Add to cart test_03",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "status": "timedOut",
+                      "duration": 30340,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\anura\\Desktop\\learn-playwright\\Pages\\specialHotPage.ts",
+                            "column": 25,
+                            "line": 11
+                          },
+                          "message": "Error: page.hover: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//div[@class=\\'image\\']/a')\u001b[22m\n\n\n\u001b[90m   at \u001b[39mPages\\specialHotPage.ts:11\n\n\u001b[0m \u001b[90m  9 |\u001b[39m     \u001b[36masync\u001b[39m addFirstProductToCart() {\n \u001b[90m 10 |\u001b[39m         \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mhover(\u001b[32m\"//div[@class='image']/a\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m             strict\u001b[33m:\u001b[39m \u001b[36mfalse\u001b[39m\n \u001b[90m 14 |\u001b[39m         })\u001b[0m\n\u001b[2m    at SpecialHotPage.addFirstProductToCart (C:\\Users\\anura\\Desktop\\learn-playwright\\Pages\\specialHotPage.ts:11:25)\u001b[22m\n\u001b[2m    at C:\\Users\\anura\\Desktop\\learn-playwright\\pomtest\\addToCart.test.ts:53:23\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-12-17T22:20:13.206Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\anura\\Desktop\\learn-playwright\\test-results\\pomtest-addToCart-Page-object-test-demo-Add-to-cart-test-03\\test-failed-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c188a18f2ecab048a02-8a75ab6f17336c67f124",
+              "file": "pomtest/addToCart.test.ts",
+              "line": 45,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-12-17T22:19:39.135Z",
+    "duration": 64900.64400000009,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
