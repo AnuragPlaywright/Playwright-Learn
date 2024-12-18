@@ -1,4 +1,6 @@
 
+// adding comments for merging into main branch 
+
 import {chromium, test} from "@playwright/test"
 
 test("Login test demo", async ()=>{
